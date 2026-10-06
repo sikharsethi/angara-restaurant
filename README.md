@@ -2,9 +2,9 @@
 
 A front-end-only restaurant website for a fictional wood-fire Indian restaurant. It was built as a portfolio project to practise building an immersive, responsive and accessible site with React, TypeScript and Three.js.
 
-**Live demo:** YOUR-VERCEL-LINK-HERE
+**Live demo:** https://angara-restaurant.vercel.app/
 
-![Angara hero section]()
+![Angara hero section](https://github.com/sikharsethi/angara-restaurant/blob/main/Screenshot%202026-10-06%20115947.png?raw=true)
 
 ## Highlights
 
