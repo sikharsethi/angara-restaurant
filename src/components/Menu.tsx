@@ -80,7 +80,7 @@ export default function Menu() {
           <p className="mt-4 max-w-lg text-ash/75">Sit at the counter facing the coals while the chef cooks seven dishes shaped by the day’s market.</p>
           <div className="mt-8 flex flex-wrap items-center gap-6">
             <p className="font-body text-3xl">₹3,800 <span className="font-display text-sm text-ash/60">per guest, wine flight +₹1,500</span></p>
-            <a href="#reserve" className="border border-ember px-6 py-3 font-display text-sm text-ember transition-colors hover:bg-ember hover:text-char">Reserve the counter</a>
+            <a href="#reserve" className="glass glass-ember rounded-full px-6 py-3 font-display text-sm text-ash">Reserve the counter</a>
           </div>
         </div>
       </div>

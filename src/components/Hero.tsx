@@ -11,9 +11,7 @@ function FoodOrb({ food }: { food: HeroFood }) {
         <div className="animate-[counter_70s_linear_infinite]">
           <div className="-translate-x-1/2 -translate-y-1/2 size-[calc(var(--stage)*0.22)] overflow-hidden rounded-full border border-ember/40 bg-soot shadow-[0_0_40px_rgba(181,101,29,0.25)]">
             {failed ? (
-              <div className="grid size-full place-items-center bg-[radial-gradient(circle,#3a2a1c,#1B1512)] p-2 text-center font-display text-[0.7rem] leading-tight text-clay sm:text-xs">
-                {food.name}
-              </div>
+              <div className="grid size-full place-items-center bg-[radial-gradient(circle,#3a2a1c,#1B1512)] p-2 text-center font-display text-[0.7rem] leading-tight text-clay sm:text-xs">{food.name}</div>
             ) : (
               <img src={food.image} alt={food.name} loading="lazy" onError={() => setFailed(true)} className="size-full object-cover" />
             )}
@@ -47,12 +45,10 @@ export default function Hero() {
             <span key={t} className="block overflow-hidden pb-[0.12em]"><span className="line block">{t}</span></span>
           ))}
         </h1>
-        <p className="mt-8 max-w-md text-clay">
-          A wood-fire Indian kitchen. Every plate is finished over live coals of cedar, mango wood and date palm.
-        </p>
-        <div className="mt-10 flex flex-wrap items-center gap-8 font-display text-sm">
-          <a href="#reserve" className="border border-ember px-7 py-3.5 text-ember transition-colors hover:bg-ember hover:text-char">Reserve a table</a>
-          <a href="#menu" className="border-b border-ash/40 pb-1 hover:border-ember hover:text-ember">Explore the menu</a>
+        <p className="mt-8 max-w-md text-clay">A wood-fire Indian kitchen. Every plate is finished over live coals of cedar, mango wood and date palm.</p>
+        <div className="mt-10 flex flex-wrap items-center gap-4 font-display text-sm">
+          <a href="#reserve" className="glass glass-ember rounded-full px-8 py-3.5 text-ash">Reserve a table</a>
+          <a href="#menu" className="glass rounded-full px-8 py-3.5 text-ash">Explore the menu</a>
         </div>
       </div>
 

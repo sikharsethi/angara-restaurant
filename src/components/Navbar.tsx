@@ -16,15 +16,13 @@ export default function Navbar() {
   }, [])
 
   return (
-    <header className={`fixed inset-x-0 top-0 z-50 transition-colors duration-500 ${solid || open ? 'bg-char/90 backdrop-blur' : ''}`}>
+    <header className={`fixed inset-x-0 top-0 z-50 border-b transition-colors duration-500 ${solid || open ? 'border-white/5 bg-char/60 backdrop-blur-xl' : 'border-transparent'}`}>
       <nav aria-label="Primary" className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4">
         <a href="#home" className="font-display text-2xl font-bold tracking-tight">Angara<span className="text-ember">.</span></a>
         <ul className="hidden gap-8 md:flex">
           {links.map(([l, h]) => <li key={h}><a href={h} className="font-display text-sm hover:text-ember">{l}</a></li>)}
         </ul>
-        <a href="#reserve" className="hidden border border-ember px-5 py-2.5 font-display text-sm text-ember transition-colors hover:bg-ember hover:text-char md:block">
-          Reserve a table
-        </a>
+        <a href="#reserve" className="glass glass-ember hidden rounded-full px-6 py-2.5 font-display text-sm text-ash md:block">Reserve a table</a>
         <button className="p-2 md:hidden" aria-label={open ? 'Close menu' : 'Open menu'} aria-expanded={open} onClick={() => setOpen(!open)}>
           {open ? <X /> : <Burger />}
         </button>
