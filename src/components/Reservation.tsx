@@ -90,7 +90,7 @@ export default function Reservation() {
   const errText = (k: keyof Form) => err[k] && <p id={`${k}-e`} role="alert" className="mt-1 text-sm text-red-400">{err[k]}</p>
 
   return (
-    <section id="reserve" className="px-5 py-24 lg:py-32">
+    <section id="reserve" className="px-5 py-16 lg:py-32">
       <div className="mx-auto max-w-6xl">
         <h2 className="font-body text-5xl font-light tracking-[-0.02em] md:text-7xl">Choose your seat by the fire</h2>
         <p className="mt-4 max-w-xl text-clay">Pick a date and time, then tap a table on the floor plan. This is a demo, so no real booking is made and no table is held.</p>
@@ -138,9 +138,10 @@ export default function Reservation() {
                 })}
               </div>
               <ul className="mx-auto mt-6 max-w-[34rem] space-y-1 text-base text-clay">
-                <li><span className="text-ash">Fireside (F):</span> closest to the coals, warm and lively.</li>
+                <li><span className="text-ash">Fireside (F):</span> closest to the fires, warm and lively.</li>
                 <li><span className="text-ash">Chef’s counter (C):</span> watch your food cooked, seats 2 each.</li>
                 <li><span className="text-ash">Window (W):</span> quieter tables along the edge.</li>
+<li className="pt-2 text-sm">Prefer less smoke? Choose a window table. The hearth is ventilated.</li>
               </ul>
               <p className="mx-auto mt-4 max-w-[34rem] font-display text-sm" aria-live="polite">
                 {sel ? <span className="text-ember">Selected: table {sel.id}, {sel.zone}, seats {sel.seats}</span> : <span className="text-clay">No table selected yet.</span>}

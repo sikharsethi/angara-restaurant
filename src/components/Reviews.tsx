@@ -22,12 +22,12 @@ export default function Reviews() {
   }
 
   return (
-    <section id="reviews" className="px-5 py-28 lg:py-36" aria-roledescription="carousel" aria-label="Guest reviews">
+    <section id="reviews" className="px-5 py-20 lg:py-36" aria-roledescription="carousel" aria-label="Guest reviews">
       <div className="mx-auto max-w-4xl" onKeyDown={onKey}>
         <h2 className="font-body text-4xl font-light tracking-[-0.02em] md:text-6xl">What guests say</h2>
         <p className="mt-3 text-clay">Sample reviews written for this demo. They are not from real customers.</p>
 
-        <div className="mt-14 min-h-[19rem] overflow-hidden" tabIndex={0} aria-label="Use the left and right arrow keys to change review">
+        <div className="mt-14 min-h-[15rem] md:min-h-[19rem] overflow-hidden" tabIndex={0} aria-label="Use the left and right arrow keys to change review">
           <AnimatePresence mode="wait" custom={dir}>
             <motion.figure
               key={r.id}
@@ -46,7 +46,7 @@ export default function Reviews() {
               <div className="flex gap-1 text-ember" role="img" aria-label={`${r.rating} out of 5 stars`}>
                 {[1, 2, 3, 4, 5].map(n => <Star key={n} size={18} fill={n <= r.rating ? 'currentColor' : 'none'} />)}
               </div>
-              <blockquote className="mt-6 font-body text-2xl font-light leading-snug md:text-4xl">“{r.text}”</blockquote>
+              <blockquote className="mt-6font-body text-xl font-light leading-snug sm:text-2xl md:text-4xl">“{r.text}”</blockquote>
               <figcaption className="mt-8 font-display text-sm">
                 {r.name} <span className="text-clay">· {r.context} · sample review</span>
               </figcaption>

@@ -41,7 +41,7 @@ export default function About() {
         <div className="lg:col-span-6 lg:col-start-7 lg:pt-16">
           <h2 className="font-body text-4xl font-light leading-[1.05] tracking-[-0.02em] md:text-6xl">One hearth. No gas line.</h2>
           <p className="mt-8 max-w-lg text-ash/80">
-            Angara began with a single clay oven and one rule: if it can’t be cooked over coals, it isn’t on the menu. Everything here is smoked, charred or slow-roasted, and nothing is rushed.
+            Angara began with a single clay oven and one rule: if it can’t be cooked over fire, it isn’t on the menu. Everything here is smoked, charred or slow-roasted, and nothing is rushed.
           </p>
           <p className="mt-5 max-w-lg text-clay">
             Our chef cooks the way her grandmother did, by watching the colour of the embers. The menu follows the seasons, so a dish you love might leave in a month and come back next year.

@@ -40,7 +40,7 @@ export default function Menu() {
   return (
     <section id="menu" className="bg-ash px-5 py-24 text-char lg:py-32">
       <div className="mx-auto max-w-6xl">
-        <h2 className="font-body text-5xl font-light tracking-[-0.02em] md:text-7xl">From the coals</h2>
+        <h2 className="font-body text-5xl font-light tracking-[-0.02em] md:text-7xl">From the fires</h2>
         <p className="mt-4 max-w-lg text-char/70">Everything on this menu touches live fire. Filter by course or by how you eat.</p>
 
         <div role="group" aria-label="Course" className="-mx-5 mt-10 flex gap-2 overflow-x-auto px-5 pb-2">
@@ -77,7 +77,7 @@ export default function Menu() {
         <div className="mt-14 bg-[linear-gradient(110deg,#1B1512_40%,#4a1a0a)] p-8 text-ash md:p-12">
           <p className="font-display text-sm text-ember">The chef’s experience</p>
           <h3 className="mt-3 max-w-xl font-body text-3xl font-light md:text-5xl">Tasting Fire: seven courses at the hearth</h3>
-          <p className="mt-4 max-w-lg text-ash/75">Sit at the counter facing the coals while the chef cooks seven dishes shaped by the day’s market.</p>
+          <p className="mt-4 max-w-lg text-ash/75">Sit at the counter facing the fires while the chef cooks seven dishes shaped by the day’s market.</p>
           <div className="mt-8 flex flex-wrap items-center gap-6">
             <p className="font-body text-3xl">₹3,800 <span className="font-display text-sm text-ash/60">per guest, wine flight +₹1,500</span></p>
             <a href="#reserve" className="glass glass-ember rounded-full px-6 py-3 font-display text-sm text-ash">Reserve the counter</a>

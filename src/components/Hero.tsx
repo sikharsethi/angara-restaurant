@@ -28,7 +28,7 @@ export default function Hero() {
 
   useEffect(() => {
     const calm = matchMedia('(prefers-reduced-motion: reduce)').matches
-    const weak = innerWidth < 640 || (navigator.hardwareConcurrency ?? 8) < 4
+    const weak = (navigator.hardwareConcurrency ?? 8) < 4
     if (!calm && !weak) setShow3D(true)
     if (calm) return
     const c = gsap.context(() => {
@@ -45,7 +45,7 @@ export default function Hero() {
             <span key={t} className="block overflow-hidden pb-[0.12em]"><span className="line block">{t}</span></span>
           ))}
         </h1>
-        <p className="mt-8 max-w-md text-clay">A wood-fire Indian kitchen. Every plate is finished over live coals of cedar, mango wood and date palm.</p>
+        <p className="mt-8 max-w-md text-clay">A wood-fire Indian kitchen. Every plate is finished over the glowing embers of cedar, mango wood and date palm.</p>
         <div className="mt-10 flex flex-wrap items-center gap-4 font-display text-sm">
           <a href="#reserve" className="glass glass-ember rounded-full px-8 py-3.5 text-ash">Reserve a table</a>
           <a href="#menu" className="glass rounded-full px-8 py-3.5 text-ash">Explore the menu</a>
